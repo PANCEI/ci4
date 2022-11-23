@@ -9,4 +9,8 @@ class MahasiswaModel extends Model
 
     protected $table = "mahasiswa";
     protected $primaryKey = "id_mahasiswa";
+    public function get()
+    {
+        return $this->findAll();
+    }
 }
