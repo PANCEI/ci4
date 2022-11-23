@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>Latihan Codeigniter 4</title>
+    <title><?= $title; ?></title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars-offcanvas/">
 

@@ -16,7 +16,10 @@ class  Mahasiswa extends BaseController
     {
 
         $data = $this->datamahasiswa->get();
-        dd($data);
-        return view("mahasiswa/index");
+        $datas = [
+            "title" => "Data Mahasiswa",
+            "mhs" => $data
+        ];
+        return view("mahasiswa/index", $datas);
     }
 }

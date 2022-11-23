@@ -11,6 +11,6 @@ class MahasiswaModel extends Model
     protected $primaryKey = "id_mahasiswa";
     public function get()
     {
-        return $this->findAll();
+        return $this->orderBy($this->primaryKey, 'DESC')->findAll();
     }
 }
