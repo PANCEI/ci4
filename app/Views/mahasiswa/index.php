@@ -18,7 +18,9 @@
                     <th scope="row"><?= $i++; ?></th>
                     <td><?= $m['nama']; ?></td>
                     <td><?= $m['nim']; ?></td>
-                    <td></td>
+                    <td>
+                        <a class="btn btn-primary" href="#">edit</a>
+                    </td>
             </tr>
         <?php endforeach; ?>
         </tbody>

@@ -9,8 +9,7 @@
     <meta name="generator" content="Hugo 0.104.2">
     <title><?= $title; ?></title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars-offcanvas/">
-
+    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.css">
 
 
 
@@ -71,8 +70,7 @@
     </style>
 
 
-    <!-- Custom styles for this template -->
-    <link href="navbar.css" rel="stylesheet">
+
 </head>
 
 <body>
