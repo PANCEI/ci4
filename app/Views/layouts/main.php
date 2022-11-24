@@ -9,12 +9,11 @@
     <meta name="generator" content="Hugo 0.104.2">
     <title><?= $title; ?></title>
 
-    <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="assets/fontawesome-free/css/all.min.css">
 
-
-
-
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.css">
+    <!-- 
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <style>
         .bd-placeholder-img {
@@ -106,8 +105,13 @@
 
     <?= $this->renderSection("Content"); ?>
 
+    <!-- <script src="assets/dist/js/popper.min.js"></script> -->
+    <script src="assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
