@@ -9,9 +9,9 @@
     <meta name="generator" content="Hugo 0.104.2">
     <title><?= $title; ?></title>
 
-    <link rel="stylesheet" href="assets/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/fontawesome-free/css/all.min.css">
 
-    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/bootstrap/dist/css/bootstrap.css">
     <!-- 
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
@@ -81,7 +81,7 @@
             </button>
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Offcanvas</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Pance</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -106,11 +106,14 @@
     <?= $this->renderSection("Content"); ?>
 
     <!-- <script src="assets/dist/js/popper.min.js"></script> -->
-    <script src="assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="<?= base_url() ?>/assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="<?= base_url() ?>/assets/sweetalert2/sweetalert2.all.min.js"></script>
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+    <script src="<?= base_url() ?>/assets/dist/jquery-3.6.1.min.js"></script>
+    <script src="<?= base_url() ?>/assets/dist/chua.js"></script>
 
 
 

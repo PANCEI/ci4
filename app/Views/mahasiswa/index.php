@@ -1,7 +1,9 @@
 <?= $this->extend("layouts/main"); ?>
 <?= $this->section("Content"); ?>
 <div class="container">
+    <div class="oke" data-oke="<?= session("success") ?>"></div>
     <h1><?= $title; ?></h1>
+    <a class="btn btn-primary mx-auto" href="/mahasiswa/create" role="button">Tambah Mahasiswa</a>
     <table class="table table-white table-hover">
         <thead>
             <tr>
@@ -19,13 +21,13 @@
                     <td><?= $m['nama']; ?></td>
                     <td><?= $m['nim']; ?></td>
                     <td>
-
+                        <a href="/mahasiswa/edit/<?= $m['id_mahasiswa'] ?>" data-bs-toggle="tooltip" data-bs-title="Edit Mahasiswa!" class="btn btn-warning"> <i class="fas fa-user-edit"></i></a>
+                        <a href="/mahasiwa/delete" data-bs-toggle="tooltip" data-bs-title="Hapus  Mahasiswa!" data-idm="<?= $m['id_mahasiswa'] ?>" class="btn btn-danger hapus-mahasiswa"> <i class="fas fa-trash"></i></a>
                     </td>
             </tr>
         <?php endforeach; ?>
         </tbody>
     </table>
-    <p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip" data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip" data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#" data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.
-    </p>
+
 </div>
 <?= $this->endSection("Content"); ?>
